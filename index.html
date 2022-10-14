@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Specimen Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <!-- Icon CDN  -->
+    <script src="https://kit.fontawesome.com/1db28464fa.js" crossorigin="anonymous"></script>
+    <title>Portfolio Card</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/VID.gif" class="logo" alt="LOGO" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I am <br /><span class="name"">Vikrant Yadav</span></h1>
+          <p class="align-para">Budding Architect</p>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------ABOUT------------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col1">
+            <img src="images/user.png" alt="">
+          </div>
+          <div class="col2">
+            <h1 class="subtittle">
+              About Me
+            </h1>
+            <p> Hii, I am Vikrant Yadav. I am a second year architectural student in pursuit of Architecture and Design. I am Currently doing my 2nd semester Bachelors of Architecture (B.Arch.) from Lovely Professional University. For me Architecture has been a very interesting journey where i could experiment with design, forms and materials, and learn from them.</p>
+           
+            <div class="tab-tittles">
+              <p class="tab-links active-link"onclick="opentab('Skills')">Skills</p>
+              <!-- <p class="tab-links"onclick="opentab('Experience')">Experience</p> -->
+              <p class="tab-links"onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="table-contents active-tab" id="Skills">
+              <ul>
+                <li><span>Autodesk AutoCAD</span><br>Designing plans</li>
+                <li><span>Autodesk Revit</span><br>Designing 3d models</li>
+                <li><span>Google SketchUp</span><br>Designing structures</li>
+                <li><span>Adobe Photoshop</span><br>Editing</li>
+              </ul>
+            </div>
+            <!-- <div class="table-contents" id="Experience">
+              <ul>
+                <li><span>2020</span><br>Designed Qutob Minar floor1</li>
+                <li><span>2020</span><br>Designed Qutob Minar floor2</li>
+                <li><span>2020</span><br>Designed Qutob Minar floor3</li>
+              </ul>
+            </div> -->
+            <div class="table-contents" id="Education">
+              <ul>
+                <li><span>2019</span><br>High School from Wendy High School, Kanpur, UP.</li>
+                <li><span>2021</span><br>Intermediate from Wendy High School, Kanpur, UP.</li>
+                <li><span>2021-Present</span><br>B.Arch. from Lovely Professional University, Punjab.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-tittle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-pen-ruler"></i>
+            <h2>Autodesk AutoCAD</h2>
+            <p>Hi, I can provide you with the most accurate 2d floor plan, 3d floor plan.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-map"></i>
+            <h2>Web Developer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima aspernatur omnis voluptatem quae vitae expedita corrupti delectus fugiat unde!</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-compass-drafting"></i>
+            <h2>Web Developer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima aspernatur omnis voluptatem quae vitae expedita corrupti delectus fugiat unde!</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------Portfolio------------------------------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-tittle">Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore corrupti, tenetur quo</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore corrupti, tenetur quod temporibus tempora asperiores ducimus voluptate fuga, fa</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore corrupti, tenetur quod temporibus tempora asperiores ducimus voluptate fuga, f</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+    <!-- ----------------------------CONTACT----------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-tittle">
+              Contact Me
+            </h1>
+            <p><i class="fa-solid fa-paper-plane"></i>vikrant.yadav1401@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 8881121119</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-medium"></i></a>
+            </div>
+            <a href="assets/CV_Vikrant Yadav.pdf" download class="btn btn-cv">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <div class="line" id="line">
+              <div class="popup" id="popup">
+                <div class="img">
+                  <img src="images/Tick.png" class="tick" />
+                </div>
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted. Thanks!</p>
+                <button type="button" class="btn btn-cv" onclick="closepopup()">OK</button>
+              </div>
+            </div>
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your email" required>
+              <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+              <button type="submit" class="block btn btn-cv" onclick="openpopup()">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- <div class="line" id="line">
+          <div class="popup" id="popup">
+            <div class="img">
+              <img src="images/Tick.png" class="tick" />
+            </div>
+            <h2>Thank You!</h2>
+            <p>Your details has been successfully submitted. Thanks!</p>
+            <button type="button" onclick="closepopup()">OK</button>
+          </div>
+        </div> -->
+      <div class="copyright">
+        <p>Copyright © Vikrant Yadav</p>
+      </div>
+    </div>
+    <script src="file.js"></script>
+  </body>
+</html>
+
+
+
