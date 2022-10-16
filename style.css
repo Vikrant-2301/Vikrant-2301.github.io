@@ -316,7 +316,9 @@ nav ul li a:hover::after {
     margin-right: 15px;
     font-size: 25px;
 }
-
+.social-icons{
+    margin-top: 1rem;
+}
 .social-icons a {
     text-decoration: none;
     color: #fff;
@@ -375,8 +377,7 @@ form .btn-cv {
 nav .fas {
     display: none;
 }
-
-@media only screen and (max-width:600px) {
+@media (min-width: 500px) and (max-width: 600px) {
     #header {
         background-image: url(images/phone.png);
     }
@@ -456,7 +457,12 @@ nav .fas {
     .copyright {
         font-size: 14px;
     }
-
+    .line{
+        height: 10px;
+    }
+    .open-popup{
+        margin-left: 20px;
+    }
 }
 /* for blogs */
 .demo {
